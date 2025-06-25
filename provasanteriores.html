@@ -12,7 +12,65 @@
     background: #f4f4f4;
     }
 
+/* Seções */
+    section {
+      padding: 20px;
+    }
 
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .blocos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+    }
+
+    .bloco {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 20vw;
+      min-width: 180px;
+      max-width: 250px;
+      height: 20vh;
+      min-height: 150px;
+      max-height: 300px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    
+    .blocopersonalizado {
+      background-color: rgb(117, 178, 222);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 20vw;
+      min-width: 180px;
+      max-width: 200px;
+      height: 20vh;
+      min-height: 90px;
+      max-height: 130px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .bloco:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 30px 20px;
+      background-color: #e9e9e9;
+    }
 
     /* Cabeçalho */
     header {
@@ -133,7 +191,9 @@
     <div class="logo-nome"> 
       <img src="img/da47a74e-32d7-4713-b733-c899275ee4f7.jpeg" alt="Logo">
     </div>
-    <div class="slogan">"Seu futuro começa com uma boa base"</div>
+    <div class="slogan">
+      πclass — o principal pilar do seu aprendizado
+      </div>
     <div class="pesquisa">
       <input type="text" placeholder="Buscar conteúdos...">
     </div>
@@ -159,5 +219,15 @@
       <span class="visually-hidden">Próximo</span>
     </button>
   </div>
+   <section class="container ">
+    <div class="p-4 rounded-4 shadow" style="background-color: #f8f9ff;">
+    <div class="d-flex flex-wrap justify-content-center gap-5">
+      <div class="blocopersonalizado personalizado" data-link="porcentagem.html">2024</div>
+      <div class="blocopersonalizado personalizado" data-link="probabilidade.html">2023</div>
+      <div class="blocopersonalizado personalizado" data-link="geometriaplana.html">2022</div>
+      <div class="blocopersonalizado personalizado" data-link="razaoeproporcao.html">2021</div>
+      <div class="blocopersonalizado personalizado" data-link="estatistica.html">2020</div>
+    </div>
+  </section>
 </body>
 </html>

@@ -3,9 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estátistica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+      
+         /* Botão de Voltar */
+          .btn-voltar {
+              background-color: #97d8f0;
+              color: white;
+              font-size: 16px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              padding: 12px 25px;
+              border: none;
+              border-radius: 5px;
+              margin-top: 30px;
+              text-decoration: none;
+              transition: background-color 0.3s ease;
+          }
+  
+          .btn-voltar:hover {
+              background-color: #a5ebff;
+          }
+  
+      body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      }
+  
+  
+  
+      /* Cabeçalho */
+      header {
+        background-color: #ffffff;
+        color: rgb(117, 117, 117);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+      }
+  
+      .logo-nome {
+        display: flex;
+        align-items: center;
+      }
+  
+      .logo-nome img {
+        height: 40px;
+        margin-right: 10px;
+      }
+  
+      .slogan {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.2em;
+        font-style: italic;
+      }
+  
+      .pesquisa {
+        max-width: 250px;
+      }
+  
+      .pesquisa input {
+        padding: 5px;
+        border-radius: 4px;
+        border: none;
+      }
+  
+      /* Seções */
+      section {
+        padding: 20px;
+      }
+  
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+  
+      .blocos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+      justify-items: center;
+      }
+  
+      .bloco {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+        width: 20vw;
+        min-width: 180px;
+        max-width: 250px;
+        height: 20vh;
+        min-height: 150px;
+        max-height: 300px;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+  
+      
+      .blocopersonalizado {
+        background-color: rgb(117, 178, 222);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+        width: 20vw;
+        min-width: 180px;
+        max-width: 200px;
+        height: 20vh;
+        min-height: 90px;
+        max-height: 130px;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+  
+      .bloco:hover {
+        transform: scale(1.05);
+      }
+  
+      footer {
+        padding: 30px 20px;
+        background-color: #e9e9e9;
+      }
+  
+      /* para definir o tamanho do carrosel*/
+      .carrossel-personalizado {
+    max-height: 300px; /* ajuste o valor como quiser */
+    overflow: hidden;
+  }
+  
+  .carrossel-personalizado .carousel-item img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+    /* cards*/
+    .card h6 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+     
+    /* mudar cor bootstrap*/
+    .personalizado {
+    background-color: #4493e1; /* azul escuro */
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .personalizado:hover {
+    background-color: #92c1f0; /* azul mais claro ao passar o mouse */
+  }
+    </style>
 </head>
 <body>
-    aaa
+
+     <!-- Botão de Voltar -->
+     <div class="text-start">
+        <a href="index.html" class="btn-voltar">Voltar</a>
+    </div>
+
+  <!-- Cabeçalho ///  navbar -->
+  <header>
+    <div class="logo-nome"> 
+      <img src="img/da47a74e-32d7-4713-b733-c899275ee4f7.jpeg" alt="Logo">
+    </div>
+    <div class="slogan">
+      πclass — o principal pilar do seu aprendizado
+      </div>
+    <div class="pesquisa">
+      <input type="text" placeholder="Buscar conteúdos...">
+    </div>
+  </header>
+  
+  <!--Banner-->
+   <!-- Carrossel -->
+  <div id="doceriaCarousel" class="carousel slide carrossel-personalizado " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/matmat.jpg" class="d-block w-100" alt="Imagem 2"> 
+      </div>
+      <div class="carousel-item">
+        <img src="img/unicamp.jpg" class="d-block w-100" alt="Imagem 2">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+    <!--CONTEUDO PORCENTAGEM-->
+
+<div class="container my-5">
+  <h1 class="text-center mb-4">Estátistica</h1>
+
+  <p class="lead">
+    Estatística é uma área da Matemática que se ocupa da coleta, organização e análise de dados. Os dados podem ser quantitativos ou qualitativos e a organização deles é feita por meio de tabelas e gráficos. Já a análise dos dados nos níveis mais básicos da Estatística é feita por meio de medidas de centralidade (moda, média e mediana), observações de gráficos e tabelas, porcentagens e também proporcionalidade.
+  </p>
+  <p class="lead">
+    Esse conteúdo é amplamente explorado nas questões do Enem, que também tem o objetivo de avaliar a leitura, análise e interpretação de dados. Para uma melhor compreensão, tomaremos como exemplos alguns exercícios do Enem para discutir alguns desses conceitos.
+  </p>
+
+  <h3 class="mt-4">Tabelas</h3>
+  <p>
+    O exercício abaixo será resolvido e comentado para discutirmos uma das formas de organizar dados em uma tabela. Observe que a primeira linha é usada para colocar o título da tabela. A segunda linha e primeira coluna contêm indicações do modo como a tabela é preenchida e/ou as variáveis em questão. Os dados em si são colocados nas demais linhas e colunas.
+  </p>
+
+  <i>Observe o exemplo:</i>
+
+  <p>(ENEM – 2009) Os planos de controle e erradicação de doenças em animais envolvem ações de profilaxia e dependem em grande medida da correta utilização e interpretação de testes diagnósticos. O quadro abaixo mostra um exemplo hipotético de aplicação de um teste diagnóstico
+</p>
+
+<img src="img11.PNG" class="d-block w-100" alt="Imagem 12">
+<br>
+<p>Considerando que, no teste diagnostico, a sensibilidade é a probabilidade de um animal infectado ser classificado como positivo e a especificidade é a probabilidade de um animal não ser infectado e ter resultado negativo, a interpretação do quadro permite inferir que
+</p>
+  <ul>
+    <li>a) A especificidade aponta um número de 5 falsos positivos.</li>
+    <li>b) O teste, a cada 100 indivíduos infectados, classificaria 90 como positivos.</li>
+    <li>c) O teste classificaria 96 como positivos em cada 100 indivíduos não infectados.</li>
+    <li>d) Ações de profilaxia são medidas adotadas para o tratamento de falsos positivos.</li>
+    <li>e) Testes de alta sensibilidade resultam em maior número de falsos negativos comparado a um teste de baixa sensibilidade.</li>
+</ul>
+
+<br>
+
+<i>Solução:</i>
+
+  <p>
+    Não existe outra maneira de solucionar esse exercício do que procurar os dados que comprovem ou refutem as alternativas na tabela e no texto ao redor dela. ATENÇÃO: o texto que o exercício traz é tão importante quanto os dados da tabela. Prova disso é a alternativa A, pois a especificidade é definida no texto, e não na tabela, como a probabilidade de um animal não ser infectado e ter um resultado negativo. Observando a tabela, a especificidade é de 912 animais. Portanto, a alternativa está incorreta.
+
+  </p>
+
+    <p>A alternativa correta é a letra B. Para verificar isso, observe que o texto da alternativa menciona apenas o número de indivíduos infectados. Há uma coluna somente para isso na tabela. São 45 indivíduos com teste positivo para cada 50 infectados. Por regra de 3, a cada 100 infectados, 90 terão resultado positivo no teste.
+    </p>
+
+    <h3 class="mt-4">Gráficos</h3>
+  <p class="text-align">Os dados também podem vir organizados na forma de gráficos, e essas representações são mais frequentes no Enem. Observe o exemplo a seguir:
+</p>
+  <br>
+
+  <p>(ENEM) O gráfico, obtido a partir de dados do Ministério do Meio Ambiente, mostra o crescimento do número de espécies da fauna brasileira ameaçadas de extinção.
+</p>
+<p>Se mantida, pelos próximos anos, a tendência de crescimento mostrada no gráfico, o número de espécies ameaçadas de extinção em 2011 será igual a:
+</p>
+
+<img src="img12.PNG" class="d-block w-100" alt="Imagem 13">
+  <br>
+<ul>
+    <li>a) 465</li>
+    <li>b) 493</li>
+    <li>c) 498</li>
+    <li>d) 538</li>
+    <li>e) 699</li>
+  </ul>
+  <br>
+  <p class="text-align">Observe que o título do gráfico não aparece em sua parte superior, mas do lado esquerdo. O importante é que, assim como na tabela, expresse a informação necessária para compreensão dos dados. Esse gráfico é conhecido como gráfico de colunas, pois cada quantidade é expressa por meio de uma barra vertical.
+    </p>
+  <br>
+
+  <i>Solução:</i>
+  <p>Observe que o crescimento do número de espécies ameaçadas de extinção é linear e está demarcado em períodos de quatro anos no gráfico. A pergunta é exatamente para o fim de mais um período de quatro anos, logo, basta descobrir o aumento do número de animais em cada período de quatro anos e somar esse acréscimo a 461.
+</p>
+<p>Para tanto, usaremos conhecimentos de progressão aritmética, mais especificamente a fórmula para encontrar um termo qualquer. Se 239 for o primeiro e 461 for o último (sétimo), basta encontrar a razão para saber o aumento em um período de quatro anos. Observe:
+</p>
+<img src="img13.PNG" class="d-block w-100" alt="Imagem 14">
+<br>
+<p>Assim, em 2011, o número de espécies ameaçadas de extinção será:
+</p>
+<p class="text-center">461 + 37 = 498</p>
+<p>Gabarito: Letra C</p>
+  <br>
+  <h3 class="mt-4">Medidas de centralidade</h3>
+  <p class="text-align">Todas as informações de gráficos e tabelas possuem algum elemento que pode servir para representar todos os outros. Esse elemento é conhecido como medida de centralidade. As medidas mais importantes para a estatística básica são:</p>
+  <ul>
+    <li>MODA: Entre todos os dados de uma lista, tabela ou gráfico, existe um que é mais frequente. Esse dado é chamado de moda. Para encontrá-la, encontre o dado que mais aparece em uma lista e ele será a moda. Existem, é claro, listas que possuem duas ou mais modas;</li>
+    <li>MEDIANA: Escrevendo em ordem crescente os dados de uma lista, tabela ou gráfico, a mediana é o valor que fica exatamente no meio de todos os outros. Se a lista tiver um número par de dados, não existirá um valor que ficará exatamente no centro, então, basta fazer a média aritmética dos dois valores centrais;
+    </li>
+    <li>MÉDIA ARITMÉTICA: é a soma de todos os dados dividida pela quantidade de dados que foram somados. A média aritmética também pode levar pesos em consideração. Isso acontece quando um valor possui mais importância e acaba sendo multiplicado por um número que recebe o nome de peso. Nas universidades, por exemplo, é comum que as primeiras provas tenham pesos menores que as últimas na média final do aluno. Na média aritmética ponderada, é feito algo parecido com a média simples: somam-se todos os valores multiplicados pelos seus respectivos pesos e divide-se o resultado pela soma dos pesos.
+    </li>
+  </ul>
+  <br>
+  <p class="text-align">(ENEM 2010) O quadro seguinte mostra o desempenho de um time de futebol no último campeonato. A coluna da esquerda mostra o número de gols marcados e a coluna da direita informa em quantos jogos o time marcou aquele número de gols.
+
+  </p>
+  <img src="IMG14.PNG" class="d-block w-100" alt="Imagem 15">
+  <br>
+  <p>Se X, Y e Z são, respectivamente, a média, a mediana e a moda dessa distribuição, então</p>
+  
+  <ul>
+    <li>A) X = Y < Z.</li>
+    <li>B) Z < X = Y.</li>
+    <li>C) Y < Z < X.</li>
+    <li>D) Z < X < Y.</li>
+    <li>E) Z < Y < X.</li>
+  </ul>
+
+  <i>Solução:</i>
+
+  <p>Observe primeiramente que a moda é zero, pois foi o número de gols marcado no maior número de partidas.
+</p>
+<p>As quantidades de gols devem ser colocadas em ordem crescente para encontrar a mediana:</p>
+<p class="text-center">0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 7</p>
+<p>Observe que existem dois valores centrais. Portanto, a mediana será:
+</p> 
+<p class="text-center">(2+2)/2 = 4/2 = 2</p>
+<p>Já a média pode ser obtida pela técnica de média ponderada ou de média simples. Para tanto, basta somar os elementos da lista acima e dividir o resultado por 20 ou, como média ponderada, considerar o número de partidas como peso. Ambos os cálculos darão o mesmo resultado.</p>
+<p class = "text-center">(0 + 0 + 0 + 0 + 0 + 1 + 1 + 1 + 2 + 2 + 2 + 2 + 3 + 3 + 3 + 4 + 4 + 5 + 5 + 7) / 20  = 45 / 20 = 2,25</p>
+<p>Sabendo que a média é X = 2,25, a mediana é Y = 2 e a moda é Z = 0, teremos:
+</p>
+<p class = "text-center">X > Y > Z ou Z < Y < X</p>
+<p>Gabarito: Letra E</p>
+
+<h2 class="mt-5 text-center">QUESTÕES:</h2>
+  <p class="text-align">1. (Enem 2019) O quadro apresenta a quantidade de um tipo de pão vendido em uma semana em uma padaria.</p>
+  <img src="img15.PNG" class="d-block w-100" alt="Imagem 16">  
+    <p>O dono da padaria decidiu que, na semana seguinte, a produção diária desse tipo de pão seria igual ao número de pães vendidos no dia da semana em que tal quantidade foi a mais próxima da média das quantidades vendidas na semana.</p>
+<p>O dia da semana utilizado como referência para a quantidade de pães a serem produzidos diariamente foi</p>
+    <br>
+    <ul>
+        <li>A) domingo.</li>
+        <li>B) segunda-feira. </li>
+        <li>C) terça-feira. </li>
+        <li>D) quarta-feira. </li>
+        <li>E) sábado. </li>
+    </ul>
+    <p class="text-align">2. (Enem) O gráfico apresenta o comportamento de emprego formal surgido, segundo o CAGED, no período de janeiro de 2010 a outubro de 2010.
+
+    </p>
+    <img src="img16.PNG" class="d-block w-100" alt="Imagem 17">  
+<br>
+<p>Com base no gráfico, o valor da parte inteira da mediana dos empregos formais surgidos no período é</p>
+<ul>
+    <li>A) 212.952</li>
+    <li>B) 229.913 </li>
+    <li>C) 240.621 </li>
+    <li>D) 255.496 </li>
+    <li>E) 298.041 </li>
+</ul>
+
+    <p class="text-align">3. (Enem 2021) O técnico de um time de basquete pretende aumentar a estatura média de sua equipe de 1,93 m para, no mínimo, 1,99 m. Para tanto, dentre os 15 jogadores que fazem parte de sua equipe, substituirá os quatro mais baixos, de estaturas: 1,78 m, 1,82 m, 1,84 m e 1,86 m. Para isso, o técnico contratou um novo jogador de 2,02 m. Os outros três jogadores que ele ainda precisa contratar devem satisfazer à sua necessidade de aumentar a média das estaturas da equipe. Ele fixará a média das estaturas para os três jogadores que ainda precisa contratar dentro do critério inicialmente estabelecido.
+
+    </p>
+    <p>Qual deverá ser a média mínima das estaturas, em metro, que ele deverá fixar para o grupo de três novos jogadores que ainda contratará?</p>
+<ul>
+    <li>A) 1,96</li>
+    <li>B) 1,98
+    </li>
+    <li>C) 2,05</li>
+    <li>D) 2,06</li>
+    <li>E) 2,08
+    </li>
+</ul>
+
+<h2 class="mt-5 text-center">GABARITO:</h2>
+<i>1. Letra C</i>
+<p>Calculando a média, temos que:</p>
+<img src="img17.PNG" class="d-block w-100" alt="Imagem 18"> 
+
+<br>
+<i>2. Letra B</i>
+<p>Colocando os dados em ordem, temos que:</p>
+<p class = "text-center">181.419, 181.796, 204.804, 209.425, 212.952, 246.875, 266.415, 298.041, 299.415, 305.068</p>
+<p>Como há 10 elementos, os termos centrais são os valores: 212.952 e 246.875, que são o 5° e 6° da sequência.
+</p>
+<p>Calculando a média entre eles, temos que:
+</p>
+<p class = "text-center">(212.952 + 246.875) : 2 = 229.913,5</p>
+
+<br>
+<i>3. Letra E</i>
+<p>Se a média atual é 1,93, então sabemos que a soma das 15 alturas é igual a 1,93 · 15 = 28,95 metros.</p>
+<p>Subtraindo as 4 alturas dos jogadores que foram substituídos e acrescentando a altura do outro jogador, temos que:
+</p>
+<p class = "text-center">28,95 + 2,02 – 1,78 – 1,82 – 1,84 – 1,86 = 23,67</p>
+<p>Além disso, serão contratados outros 3 jogadores com altura x, y z, e queremos que a média de altura seja 1,99, então, temos que:</p>
+<p class = "text-center">(23,67 + x + y + z) : 15 = 1,99
+</p>
+<p class = "text-center">23,67 + x + y + z = 1,99 · 15</p>
+<p class = "text-center">23,67 + x + y + z = 29,85</p>
+<p class = "text-center">x + y + z = 29,85 – 23,67
+</p>
+<p class = "text-center">x + y + z = 6,18
+</p>
+<p>Para encontrar a média da altura desses três jogadores, basta dividir por três: 6,18 : 3 = 2,06.</p>
+</div>
+
+
+        
+    
+  <!-- Rodapé -->
+   <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
+                    <p> Melhor plataforma de estudos! </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links Úteis</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Sobre Nós</a></li>
+                        <li><a href="#" class="text-dark">Contato</a></li>
+                        <li><a href="#" class="text-dark">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-dark">Política de Privacidade</a></li>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-auto">
+                    <h5 class="text-uppercase">Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Facebook</a></li>
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="#" class="text-dark">Twitter</a></li>
+                        <li><a href="#" class="text-dark">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2025 Piclass. Todos os direitos reservados.
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script>
+  // Seleciona todos os blocos com atributo data-link
+  document.querySelectorAll('[data-link]').forEach(bloco => {
+    bloco.addEventListener('click', () => {
+      const destino = bloco.getAttribute('data-link');
+      window.location.href = destino;
+    });
+  });
+</script>
 </body>
 </html>
