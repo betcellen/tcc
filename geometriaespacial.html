@@ -7,7 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <style>
       
-        /* Botão de Voltar */
+  /* Botão de Voltar */
           .btn-voltar {
               background-color: #e65d6f;
               color: white;
@@ -24,7 +24,7 @@
           .btn-voltar:hover {
               background-color: #e21251;
           }
-  
+
   
       body {
       margin: 0;
@@ -132,17 +132,19 @@
         background-color: #e9e9e9;
       }
   
-      /* para definir o tamanho do carrosel*/
-      .carrossel-personalizado {
-    max-height: 300px; /* ajuste o valor como quiser */
-    overflow: hidden;
-  }
-  
-  .carrossel-personalizado .carousel-item img {
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-  }
+    /* para definir o tamanho do carrosel*/
+   .carrossel-personalizado {
+  width: 100%;
+  max-height: 400px; /* opcional, limite máximo */
+  overflow: hidden;
+}
+
+.carrossel-personalizado .carousel-item img {
+  width: 100%;
+  height: auto; /* ajusta automaticamente a altura */
+  object-fit: cover; /* mantém o corte proporcional */
+  max-height: 400px; /* opcional */
+}
     /* cards*/
     .card h6 {
     font-size: 0.9rem;
@@ -187,27 +189,38 @@
     </div>
   </header>
   
-  <!--Banner-->
-   <!-- Carrossel -->
-  <div id="doceriaCarousel" class="carousel slide carrossel-personalizado " data-bs-ride="carousel">
+<!-- Banner/Carrossel -->
+  <div id="bannerpiclass" class="carousel slide carrossel-personalizado" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/carrossellll.JPG" class="d-block w-100" alt="Imagem 2"> 
+        <img src="img/apiclass.png" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="img/unicamp.jpg" class="d-block w-100" alt="Imagem 2">
+        <img src="img/piclasssssssss.png" class="d-block w-100">
+      </div>
+            <div class="carousel-item">
+        <img src="img/Transforme.png" class="d-block w-100">
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Matemática sem dor de cabeça..png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/teste54.png" class=" d-block w-100">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
-  </div>
 
+   <!--Buttons-->
+   <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Anterior</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Próximo</span>
+   </button>
+ </div>
+ 
     <!--CONTEUDO PORCENTAGEM-->
 
 <div class="container my-5">
@@ -219,7 +232,7 @@
 <p>Poliedros são figuras tridimensionais formadas pela união de polígonos regulares, na qual os ângulos poliédricos são todos congruentes. A união desses polígonos forma elementos que compõem o poliedro, são eles: vértices, arestas e faces. No entanto, nem toda figura tridimensional é um poliedro, um exemplo disso são as figuras que possuem faces curvas chamadas de corpos redondos.</p>
 <p>Existe uma fórmula matemática que relaciona os elementos de um poliedro chamada relação de Euler. Além disso, os poliedros dividem-se em dois grupos: os chamados poliedros convexos e os não convexos. Alguns poliedros merecem uma atenção especial, são os chamados poliedros de Platão: tetraedro, hexaedro, octaedro, dodecaedro e icosaedro.</p>
 
-<img src="img128.PNG" class="d-block w-100" alt="Imagem 128">
+<img src="img/img128.PNG" class="d-block w-100" alt="Imagem 128">
 <br>
 
 <h3>Poliedros convexos</h3>
@@ -235,14 +248,14 @@
 <i>Exemplo</i>
 <p>Um poliedro tem 6 faces quadradas. Vamos determinar a quantidade de arestas.</p>
 <p>De acordo com a propriedade, basta multiplicar o número de arestas de uma face pela quantidade de faces, e isso é igual ao dobro do número de arestas. Dessa forma:</p>
-<img src="img129.PNG" class="d-block w-100" alt="Imagem 129">
+<img src="img/img129.PNG" class="d-block w-100" alt="Imagem 129">
 <br>
 
 <p>2. A soma dos vértices de todas as faces é igual à soma das arestas de todas as faces, que é igual ao dobro do número de arestas.</p>
 <i>Exemplo</i>
 <p>Um poliedro com 5 ângulos tetraédricos e 4 ângulos hexaédricos. Vamos determinar a quantidade de arestas.</p>
 <p>De maneira análoga ao exemplo anterior, a segunda propriedade diz que a soma das arestas de todas as faces é igual ao dobro do número de arestas. O número de arestas é dado pelo produto de 5 por 4 e 4 por 6, pois são 5 ângulos tetraédricos e 4 hexaédricos. Assim:</p>
-<img src="img130.PNG" class="d-block w-100" alt="Imagem 130">
+<img src="img/img130.PNG" class="d-block w-100" alt="Imagem 130">
 <br>
 
 <h3>Relação de Euler</h3>
@@ -256,7 +269,7 @@
 
 <h3>Prismas</h3>
 <h4>Composição do Prisma</h4>
-<img src="img131.PNG" class="d-block w-100" alt="Imagem 131">
+<img src="img/img131.PNG" class="d-block w-100" alt="Imagem 131">
 <br>
 
 <h3>Classificação dos Prismas</h3>
@@ -265,7 +278,7 @@
     <li><i>Prisma Reto:</i> possui arestas laterais perpendiculares à base, cujas faces laterais são retângulos.</li>
     <li><i>Prisma Oblíquo:</i> possui arestas laterais oblíquas à base, cujas faces laterais são paralelogramos.</li>
 </ul>
-<img src="img132.PNG" class="d-block w-100" alt="Imagem 132">
+<img src="img/img132.PNG" class="d-block w-100" alt="Imagem 132">
 <br>
 
 <h3>Bases do Prisma</h3>
@@ -278,7 +291,7 @@
     <li>Prisma Heptagonal: base formada por heptágono.</li>
     <li>Prisma Octogonal: base formada por octógono.</li>
 </ul>
-<img src="img133.PNG" class="d-block w-100" alt="Imagem 133">
+<img src="img/img133.PNG" class="d-block w-100" alt="Imagem 133">
 <br>
 <p>Os chamados “prismas regulares” são aqueles cujas bases são polígonos regulares e, portanto, formados por prismas retos.</p>
 
@@ -303,7 +316,7 @@
 
 <h3>Pirâmides</h3>
 <p>Segundo as bases e o número arestas que formam as pirâmides, elas são classificadas em:</p>
-<img src="img134.PNG" class="d-block w-100" alt="Imagem 134">
+<img src="img/img134.PNG" class="d-block w-100" alt="Imagem 134">
 <br>
 
 <p>No tocante à inclinação da base, as pirâmides são classificadas de duas maneiras:</p>
@@ -313,12 +326,12 @@
 </ul>
 
 <h3>Elementos da Pirâmide</h3>
-<img src="img135.PNG" class="d-block w-100" alt="Imagem 135">
+<img src="img/img135.PNG" class="d-block w-100" alt="Imagem 135">
 <br>
 
 <h3>Área da Pirâmide</h3>
 <p>Para calcular a área total da pirâmide, utiliza-se a seguinte fórmula:</p>
-<img src="img136.PNG" class="d-block w-100" alt="Imagem 136">
+<img src="img/img136.PNG" class="d-block w-100" alt="Imagem 136">
 <p>Onde:</p>
 <p>Ab: Área da base</p>
 <p>h: altura</p>
@@ -344,13 +357,13 @@
 
 <h4>Elementos do cilindro</h4>
 <p>O cilindro é um sólido geométrico composto por duas bases no formato de círculos e paralelas, e uma área lateral que as conecta. O fato de a base do cilindro ser um círculo faz com que ele seja classificado como corpo redondo. Os principais elementos do cilindro são as suas bases, o comprimento do raio da base, a área lateral e a altura.</p>
-<img src="img137.PNG" class="d-block w-100" alt="Imagem 137">
+<img src="img/img137.PNG" class="d-block w-100" alt="Imagem 137">
 <br>
 
 <h4>Representação de um cilindro oblíquo.</h4>
 <i>Planificação do cilindro</i>
 <p>Para compreender um pouco mais o cálculo da área e do volume do cilindro, é importante reconhecermos a planificação do cilindro.</p>
-<img src="img138.PNG" class="d-block w-100" alt="Imagem 138">
+<img src="img/img138.PNG" class="d-block w-100" alt="Imagem 138">
 <br>
 
 <h4>Áreas do cilindro</h4>
@@ -402,14 +415,14 @@
 <p class = "text-center">At=960 cm^2</p>
 
 <h3>Cones</h3>
-<img src="img139.PNG" class="d-block w-100" alt="Imagem 139">
-<img src="img140.PNG" class="d-block w-100" alt="Imagem 140">
-<img src="img141.PNG" class="d-block w-100" alt="Imagem 141">
+<img src="img/img139.PNG" class="d-block w-100" alt="Imagem 139">
+<img src="img/img140.PNG" class="d-block w-100" alt="Imagem 140">
+<img src="img/img141.PNG" class="d-block w-100" alt="Imagem 141">
 <br>
 
 <h3>Tronco de cone</h3>
 <p>Quando se intercepta um cone por um plano paralelo à base, é possível criar o sólido geométrico conhecido como tronco de um cone. O tronco de um cone vai sempre possuir duas bases no formato de círculos, uma maior e a outra menor.</p>
-<img src="img142.PNG" class="d-block w-100" alt="Imagem 142">
+<img src="img/img142.PNG" class="d-block w-100" alt="Imagem 142">
 
 
 <!--VIDEOAULAS----------------------------------------------------------------->
@@ -431,7 +444,7 @@
 
 <h2 class="mt-5 text-center">QUESTÕES:</h2>
   <p class="text-align">1. (Enem 2013) Uma cozinheira, especialista em fazer bolos, utiliza uma forma no formato representado na figura:   </p>
- <img src="img143.PNG" class="d-block w-100" alt="Imagem 143">
+ <img src="img/img143.PNG" class="d-block w-100" alt="Imagem 143">
 <p>Nela identifica-se a representação de duas figuras geométricas tridimensionais. Essas figuras são:</p>
 <br>
 <p>A) um tronco de cone e um cilindro.</p>
@@ -442,7 +455,7 @@
 
 <br>
     <p>2. (Enem 2016) Em regiões agrícolas, é comum a presença de silos para armazenamento e secagem da produção de grãos, no formato de um cilindro reto, sobreposto por um cone, e dimensões indicadas na figura. O silo fica cheio e o transporte dos grãos é feito em caminhões de carga cuja capacidade é de 20 m³. Uma região possui um silo cheio e apenas um caminhão para transportar os grãos para a usina de beneficiamento.</p>
-<img src="img144.PNG" class="d-block w-100" alt="Imagem 144">
+<img src="img/img144.PNG" class="d-block w-100" alt="Imagem 144">
 <p>Utilize 3 como aproximação para π. </p>
 <p>O número mínimo de viagens que o caminhão precisará fazer para transportar todo o volume de grãos armazenados no silo é</p>
 
@@ -480,24 +493,21 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
-                    <p> Melhor plataforma de estudos! </p>
+                    <p> Melhor isolado de matemática! </p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links Úteis</h5>
+                    <h5 class="text-uppercase">links úteis</h5>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="#" class="text-dark">Sobre Nós</a></li>
-                        <li><a href="#" class="text-dark">Contato</a></li>
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="sobrenos.html" class="text-dark">Sobre Nós</a></li>
                         <li><a href="#" class="text-dark">Termos de Serviço</a></li>
-                        <li><a href="#" class="text-dark">Política de Privacidade</a></li>
                 </div>
                 <div class="col"></div>
                 <div class="col-md-auto">
-                    <h5 class="text-uppercase">Redes Sociais</h5>
+                    <h5 class="text-uppercase">Converse conosco:</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-dark">Facebook</a></li>
-                        <li><a href="#" class="text-dark">Instagram</a></li>
-                        <li><a href="#" class="text-dark">Twitter</a></li>
-                        <li><a href="#" class="text-dark">LinkedIn</a></li>
+                      <li> contato.piclass@gmail.com</li>
+            
                     </ul>
                 </div>
             </div>  
@@ -506,8 +516,15 @@
             © 2025 Piclass. Todos os direitos reservados.
         </div>
     </footer>
-<script src="script.js"></script>
+<script src="script.js"> 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+
+  // Inicialização manual opcional (troca a cada 5s)
+    const el = document.querySelector('#bannerpiclass');
+    const carousel = new bootstrap.Carousel(el, { interval: 5000 });
+ 
   // Seleciona todos os blocos com atributo data-link
   document.querySelectorAll('[data-link]').forEach(bloco => {
     bloco.addEventListener('click', () => {
@@ -517,5 +534,4 @@
   });
 </script>
 </body>
-
 </html>

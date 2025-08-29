@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <style>
     
-        /* Botão de Voltar */
+  /* Botão de Voltar */
           .btn-voltar {
               background-color: #e65d6f;
               color: white;
@@ -27,8 +27,15 @@
           .btn-voltar:hover {
               background-color: #e21251;
           }
-  
-  
+
+ 
+     body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: #f4f4f4;
+     }
+ 
+ 
  
      /* Cabeçalho */
      header {
@@ -128,17 +135,19 @@
        background-color: #e9e9e9;
      }
  
-     /* para definir o tamanho do carrosel*/
-     .carrossel-personalizado {
-   max-height: 300px; /* ajuste o valor como quiser */
-   overflow: hidden;
- }
- 
- .carrossel-personalizado .carousel-item img {
-   object-fit: cover;
-   height: 300px;
-   width: 100%;
- }
+    /* para definir o tamanho do carrosel*/
+   .carrossel-personalizado {
+  width: 100%;
+  max-height: 400px; /* opcional, limite máximo */
+  overflow: hidden;
+}
+
+.carrossel-personalizado .carousel-item img {
+  width: 100%;
+  height: auto; /* ajusta automaticamente a altura */
+  object-fit: cover; /* mantém o corte proporcional */
+  max-height: 400px; /* opcional */
+}
    /* cards*/
    .card h6 {
    font-size: 0.9rem;
@@ -185,27 +194,38 @@
        </div>
      </header>
      
-     <!--Banner-->
-      <!-- Carrossel -->
-     <div id="doceriaCarousel" class="carousel slide carrossel-personalizado " data-bs-ride="carousel">
-       <div class="carousel-inner">
-         <div class="carousel-item active">
-           <img src="img/carrossellll.JPG" class="d-block w-100" alt="Imagem 2"> 
-         </div>
-         <div class="carousel-item">
-           <img src="img/unicamp.jpg" class="d-block w-100" alt="Imagem 2">
-         </div>
-       </div>
-       <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
-         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-         <span class="visually-hidden">Anterior</span>
-       </button>
-       <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
-         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-         <span class="visually-hidden">Próximo</span>
-       </button>
-     </div>
-   
+<!-- Banner/Carrossel -->
+  <div id="bannerpiclass" class="carousel slide carrossel-personalizado" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/apiclass.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/piclasssssssss.png" class="d-block w-100">
+      </div>
+            <div class="carousel-item">
+        <img src="img/Transforme.png" class="d-block w-100">
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Matemática sem dor de cabeça..png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/teste54.png" class=" d-block w-100">
+      </div>
+    </div>
+
+   <!--Buttons-->
+   <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Anterior</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Próximo</span>
+   </button>
+ </div>
+    </div>
        <!--CONTEUDO probabilidade-->
    
    <div class="container my-5">
@@ -217,7 +237,7 @@
      </p>
      <p>As questões de probabilidade no Enem baseiam-se na interpretação das ideias apresentadas e no uso do cálculo das chances de um evento acontecer, o qual é representado pela fórmula:
     </p>
-    <img src="img6.PNG" class="d-block w-100" alt="Imagem7">
+    <img src="img/img6.PNG" class="d-block w-100" alt="Imagem7">
     
     <p>O número de casos favoráveis é justamente o que “estou procurando”, e o número de casos possíveis é também conhecido como o espaço amostral, sendo representado pela letra grega ômega (Ω). Vejamos dois exemplos de questões com probabilidade no Enem de provas anteriores.
     </p>
@@ -226,7 +246,7 @@
     <p class="text-align">1. Todo o país passa pela primeira fase de campanha de vacinação contra a gripe suína (H1N1). Segundo um médico infectologista do Instituto Emílio Ribas, de São Paulo, a imunização “deve mudar”, no país, a história da epidemia. Com a vacina, de acordo com ele, o Brasil tem a chance de barrar uma tendência do crescimento da doença, que já matou 17 mil no mundo. A tabela apresenta dados específicos de um único posto de vacinação.
     </p>
     <br>
-    <img src="img7.PNG" class="d-block w-100" alt="Imagem 8">
+    <img src="img/img7.PNG" class="d-block w-100" alt="Imagem 8">
    
     <br>
      <p>
@@ -252,7 +272,7 @@
         Então o grupo total de vacinados são 200 pessoas. Precisamos agora do número de casos favoráveis. Essa informação é a que mais nos interessa, a quantidade de pessoas portadoras de doenças crônicas que foram vacinadas. De acordo com a tabela, esse valor é de 22 pessoas. Vamos então utilizar a fórmula para o cálculo da probabilidade:
      </p>
 
-     <img src="img8.PNG" class="d-block w-100" alt="Imagem 9">
+     <img src="img/img8.PNG" class="d-block w-100" alt="Imagem 9">
 <br>
     <p>Fazendo a divisão de 11 por 100, encontramos o valor de 0,11. Multiplicando esse valor por 100, encontramos a porcentagem que procurávamos, 11%. Portanto, a alternativa correta é a letra c.</p>
    <br>
@@ -271,14 +291,14 @@
    <p>Assim como havíamos comentado no início, esse é o tipo de questão em que o raciocínio e a interpretação são fundamentais. Se somarmos o número de alunos que falam inglês, os que falam espanhol e os que não falam nenhuma dessas línguas, teremos um total de 1400, o que supera a quantidade de alunos da escola! Isso nos garante então que há alunos que falam inglês e espanhol simultaneamente. Vamos então determinar essas quantidades com exatidão.</p>
    <p>Se temos 1200 alunos na escola e 300 deles não falam línguas estrangeiras, restam apenas 900 alunos que falam essas línguas. Se somarmos a quantidade de alunos que falam inglês (600) com os que falam espanhol (500), obteremos um total de 1.100. Então, ao fazermos a diferença desse total com a quantidade que fala língua estrangeira, isto é, 1.100 – 900, obteremos 200. Essa é a quantidade de alunos que falam as duas línguas. Portanto, de 600 alunos, apenas 400 falam somente inglês, e de 500 alunos, apenas 300 falam apenas espanhol. Para facilitar o entendimento, podemos organizar essas informações em um <i>diagrama de Venn:</i></p>
     
-   <img src="img9.PNG" class="d-block w-100" alt="Imagem 10">
+   <img src="img/img9.PNG" class="d-block w-100" alt="Imagem 10">
    <p class="text-center">Através do Diagrama de Venn, podemos ver a distribuição dos alunos em relação à língua estrangeira falada
    </p>
    
    <p>Através do diagrama de Venn, fica evidente que 400 alunos falam apenas inglês, 300 alunos falam apenas espanhol, 200 alunos falam as duas línguas e 300 alunos não falam nenhuma língua estrangeira.
 </p>
 <p>Se vamos escolher um aluno que não fala inglês, nosso espaço amostral será composto por aqueles que falam apenas espanhol ou que não falam nenhuma língua, logo, n(Ω) = 600. O número de casos favoráveis é a quantidade de alunos que falam apenas espanhol, então n(E) = 300. Vamos então calcular a probabilidade:</p>
-<img src="img10.PNG" class="d-block w-100" alt="Imagem 11">
+<img src="img/img10.PNG" class="d-block w-100" alt="Imagem 11">
 
 <br>
 
@@ -369,49 +389,51 @@
    
            
        
-     <!-- Rodapé -->
-      <footer class="bg-light text-center text-lg-start mt-5">
-           <div class="container p-4">
-               <div class="row">
-                   <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                       <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
-                       <p> Melhor plataforma de estudos! </p>
-                   </div>
-                   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                       <h5 class="text-uppercase">Links Úteis</h5>
-                       <ul class="list-unstyled mb-0">
-                           <li><a href="#" class="text-dark">Sobre Nós</a></li>
-                           <li><a href="#" class="text-dark">Contato</a></li>
-                           <li><a href="#" class="text-dark">Termos de Serviço</a></li>
-                           <li><a href="#" class="text-dark">Política de Privacidade</a></li>
-                   </div>
-                   <div class="col"></div>
-                   <div class="col-md-auto">
-                       <h5 class="text-uppercase">Redes Sociais</h5>
-                       <ul class="list-unstyled">
-                           <li><a href="#" class="text-dark">Facebook</a></li>
-                           <li><a href="#" class="text-dark">Instagram</a></li>
-                           <li><a href="#" class="text-dark">Twitter</a></li>
-                           <li><a href="#" class="text-dark">LinkedIn</a></li>
-                       </ul>
-                   </div>
-               </div>  
-           </div>
-           <div class="text-center p-3 bg-dark text-white">
-               © 2025 Piclass. Todos os direitos reservados.
-           </div>
-       </footer>
-   <script src="script.js"></script>
-   <script>
-     // Seleciona todos os blocos com atributo data-link
-     document.querySelectorAll('[data-link]').forEach(bloco => {
-       bloco.addEventListener('click', () => {
-         const destino = bloco.getAttribute('data-link');
-         window.location.href = destino;
-       });
-     });
-   </script>
+  <!-- Rodapé -->
+   <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
+                    <p> Melhor isolado de matemática! </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">links úteis</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="sobrenos.html" class="text-dark">Sobre Nós</a></li>
+                        <li><a href="#" class="text-dark">Termos de Serviço</a></li>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-auto">
+                    <h5 class="text-uppercase">Converse conosco:</h5>
+                    <ul class="list-unstyled">
+                      <li> contato.piclass@gmail.com</li>
+            
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2025 Piclass. Todos os direitos reservados.
+        </div>
+    </footer>
+<script src="script.js"> 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+  // Inicialização manual opcional (troca a cada 5s)
+    const el = document.querySelector('#bannerpiclass');
+    const carousel = new bootstrap.Carousel(el, { interval: 5000 });
+ 
+  // Seleciona todos os blocos com atributo data-link
+  document.querySelectorAll('[data-link]').forEach(bloco => {
+    bloco.addEventListener('click', () => {
+      const destino = bloco.getAttribute('data-link');
+      window.location.href = destino;
+    });
+  });
+</script>
 </body>
-
 </html>
-

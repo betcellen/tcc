@@ -7,24 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
  <style>
     
-        /* Botão de Voltar */
-         .btn-voltar {
-             background-color: #97d8f0;
-             color: white;
-             font-size: 16px;
-             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-             padding: 12px 25px;
-             border: none;
-             border-radius: 5px;
-             margin-top: 30px;
-             text-decoration: none;
-             transition: background-color 0.3s ease;
-         }
- 
-         .btn-voltar:hover {
-             background-color: #a5ebff;
-         }
- 
+  /* Botão de Voltar */
+          .btn-voltar {
+              background-color: #e65d6f;
+              color: white;
+              font-size: 16px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              padding: 12px 25px;
+              border: none;
+              border-radius: 5px;
+              margin-top: 30px;
+              text-decoration: none;
+              transition: background-color 0.3s ease;
+          }
+  
+          .btn-voltar:hover {
+              background-color: #e21251;
+          }
+
      body {
      margin: 0;
      font-family: Arial, sans-serif;
@@ -131,17 +131,19 @@
        background-color: #e9e9e9;
      }
  
-     /* para definir o tamanho do carrosel*/
-     .carrossel-personalizado {
-   max-height: 300px; /* ajuste o valor como quiser */
-   overflow: hidden;
- }
- 
- .carrossel-personalizado .carousel-item img {
-   object-fit: cover;
-   height: 300px;
-   width: 100%;
- }
+    /* para definir o tamanho do carrosel*/
+   .carrossel-personalizado {
+  width: 100%;
+  max-height: 400px; /* opcional, limite máximo */
+  overflow: hidden;
+}
+
+.carrossel-personalizado .carousel-item img {
+  width: 100%;
+  height: auto; /* ajusta automaticamente a altura */
+  object-fit: cover; /* mantém o corte proporcional */
+  max-height: 400px; /* opcional */
+}
    /* cards*/
    .card h6 {
    font-size: 0.9rem;
@@ -170,7 +172,7 @@
 <body>
     <!-- Botão de Voltar -->
    <div class="text-start">
-    <a href="index.html" class="btn-voltar">Voltar</a>
+    <a href="conteudocompleto.html" class="btn-voltar">Voltar</a>
 </div>
 
 <!-- Cabeçalho ///  navbar -->
@@ -186,26 +188,37 @@
 </div>
 </header>
 
-<!--Banner-->
-<!-- Carrossel -->
-<div id="doceriaCarousel" class="carousel slide carrossel-personalizado " data-bs-ride="carousel">
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <img src="img/carrossellll.JPG" class="d-block w-100" alt="Imagem 2"> 
-  </div>
-  <div class="carousel-item">
-    <img src="img/unicamp.jpg" class="d-block w-100" alt="Imagem 2">
-  </div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Anterior</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Próximo</span>
-</button>
-</div>
+<!-- Banner/Carrossel -->
+  <div id="bannerpiclass" class="carousel slide carrossel-personalizado" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/apiclass.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/piclasssssssss.png" class="d-block w-100">
+      </div>
+            <div class="carousel-item">
+        <img src="img/Transforme.png" class="d-block w-100">
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Matemática sem dor de cabeça..png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/teste54.png" class=" d-block w-100">
+      </div>
+    </div>
+
+   <!--Buttons-->
+   <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Anterior</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Próximo</span>
+   </button>
+ </div>
 
 <!--CONTEUDO ReP-->
 
@@ -261,27 +274,27 @@
 <h3>Representação dos números reais na reta numérica</h3>
 <p>Podemos representar os números reais em uma reta, isso possibilita, por exemplo, o desenvolvimento da área da geometria analítica e o estudo de gráficos de funções.</p>
 <p>Para essa representação, utilizamos o princípio da boa ordem dos números reais, pois, ao comparar dois números reais distintos, é possível saber qual deles é o maior e então ordená-los. A representação dos números na reta é conhecida como reta numérica ou reta real. O marco zero é conhecido como origem da reta. Para o lado direito, temos os números reais positivos, e, para o lado esquerdo, os números reais negativos.</p>
-<img src="img113.PNG" class="d-block w-100" alt="Imagem 113">
+<img src="img/img113.PNG" class="d-block w-100" alt="Imagem 113">
 <br>
 
 <h3>Potenciação</h3>
 <p>Potenciação é a operação matemática utilizada para escrever de forma resumida números muito grandes, onde é feita a multiplicação de n fatores iguais que se repetem.</p>
-<img src="img114.PNG" class="d-block w-100" alt="Imagem 114">
+<img src="img/img114.PNG" class="d-block w-100" alt="Imagem 114">
 <br>
 <p>Lembre-se!</p>
-<img src="img115.PNG" class="d-block w-100" alt="Imagem 115">
+<img src="img/img115.PNG" class="d-block w-100" alt="Imagem 115">
 <br>
 <h4>Propriedades da potenciação</h4>
 <br>
-<img src="img122.PNG" class="d-block w-100" alt="Imagem 122">
-<img src="img123.PNG" class="d-block w-100" alt="Imagem 123">
+<img src="img/img122.PNG" class="d-block w-100" alt="Imagem 122">
+<img src="img/img123.PNG" class="d-block w-100" alt="Imagem 123">
 <br>
 <h4>Radiciação</h4>
-<img src="img116.PNG" class="d-block w-100" alt="Imagem 116">
+<img src="img/img116.PNG" class="d-block w-100" alt="Imagem 116">
 <br>
 <h4>Propriedades da radiciação</h4>
-<img src="img117.PNG" class="d-block w-100" alt="Imagem 117">
-<img src="img118.PNG" class="d-block w-100" alt="Imagem 118">
+<img src="img/img117.PNG" class="d-block w-100" alt="Imagem 117">
+<img src="img/img118.PNG" class="d-block w-100" alt="Imagem 118">
 <br>
 
 <h3>Como calcular um logaritmo?</h3>
@@ -293,13 +306,13 @@
 <p>Neste exemplo, queremos descobrir qual expoente devemos elevar o 3 para que o resultado seja igual a 81. Usando a definição, temos:</p>
 <p class = "text-center">log3 81 = x ⇔ 3x = 81</p>
 <p>Para encontrar esse valor, podemos fatorar o número 81, conforme indicado abaixo:</p>
-<img src="img119.PNG" class="d-block w-100" alt="Imagem 119">
+<img src="img/img119.PNG" class="d-block w-100" alt="Imagem 119">
 <p>Substituindo o 81 por sua forma fatorada, na equação anterior, temos:</p>
 <p class = "text-center">3x = 34</p>
 <p>Como as bases são iguais, chegamos a conclusão que x = 4.</p>
 
 <h3>Propriedades dos Logaritmos</h3>
-<img src="img120.PNG" class="d-block w-100" alt="Imagem 120">
+<img src="img/img120.PNG" class="d-block w-100" alt="Imagem 120">
 <br>
 <i>Exemplos</i>
 <p>1) Escreva os logaritmos abaixo na forma de um único logaritmo.</p>
@@ -387,47 +400,51 @@
 
     
 
-<!-- Rodapé -->
-<footer class="bg-light text-center text-lg-start mt-5">
-    <div class="container p-4">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
-                <p> Melhor plataforma de estudos! </p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links Úteis</h5>
-                <ul class="list-unstyled mb-0">
-                    <li><a href="#" class="text-dark">Sobre Nós</a></li>
-                    <li><a href="#" class="text-dark">Contato</a></li>
-                    <li><a href="#" class="text-dark">Termos de Serviço</a></li>
-                    <li><a href="#" class="text-dark">Política de Privacidade</a></li>
-            </div>
-            <div class="col"></div>
-            <div class="col-md-auto">
-                <h5 class="text-uppercase">Redes Sociais</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-dark">Facebook</a></li>
-                    <li><a href="#" class="text-dark">Instagram</a></li>
-                    <li><a href="#" class="text-dark">Twitter</a></li>
-                    <li><a href="#" class="text-dark">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>  
-    </div>
-    <div class="text-center p-3 bg-dark text-white">
-        © 2025 Piclass. Todos os direitos reservados.
-    </div>
-</footer>
-<script src="script.js"></script>
+  <!-- Rodapé -->
+   <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
+                    <p> Melhor isolado de matemática! </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">links úteis</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="sobrenos.html" class="text-dark">Sobre Nós</a></li>
+                        <li><a href="#" class="text-dark">Termos de Serviço</a></li>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-auto">
+                    <h5 class="text-uppercase">Converse conosco:</h5>
+                    <ul class="list-unstyled">
+                      <li> contato.piclass@gmail.com</li>
+            
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2025 Piclass. Todos os direitos reservados.
+        </div>
+    </footer>
+<script src="script.js"> 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-// Seleciona todos os blocos com atributo data-link
-document.querySelectorAll('[data-link]').forEach(bloco => {
-bloco.addEventListener('click', () => {
-  const destino = bloco.getAttribute('data-link');
-  window.location.href = destino;
-});
-});
+
+  // Inicialização manual opcional (troca a cada 5s)
+    const el = document.querySelector('#bannerpiclass');
+    const carousel = new bootstrap.Carousel(el, { interval: 5000 });
+ 
+  // Seleciona todos os blocos com atributo data-link
+  document.querySelectorAll('[data-link]').forEach(bloco => {
+    bloco.addEventListener('click', () => {
+      const destino = bloco.getAttribute('data-link');
+      window.location.href = destino;
+    });
+  });
 </script>
 </body>
 </html>

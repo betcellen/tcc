@@ -7,3 +7,7 @@ document.querySelectorAll('.bloco').forEach(bloco => {
     }
   });
 });
+
+ // Inicialização manual opcional (troca a cada 5s)
+    const el = document.querySelector('#bannerpiclass');
+    const carousel = new bootstrap.Carousel(el, { interval: 5000 });

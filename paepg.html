@@ -7,23 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <style>
     
-        /* Botão de Voltar */
-         .btn-voltar {
-             background-color: #97d8f0;
-             color: white;
-             font-size: 16px;
-             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-             padding: 12px 25px;
-             border: none;
-             border-radius: 5px;
-             margin-top: 30px;
-             text-decoration: none;
-             transition: background-color 0.3s ease;
-         }
- 
-         .btn-voltar:hover {
-             background-color: #a5ebff;
-         }
+       /* Botão de Voltar */
+          .btn-voltar {
+              background-color: #e65d6f;
+              color: white;
+              font-size: 16px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              padding: 12px 25px;
+              border: none;
+              border-radius: 5px;
+              margin-top: 30px;
+              text-decoration: none;
+              transition: background-color 0.3s ease;
+          }
+  
+          .btn-voltar:hover {
+              background-color: #e21251;
+          }
+
  
      body {
      margin: 0;
@@ -131,17 +132,19 @@
        background-color: #e9e9e9;
      }
  
-     /* para definir o tamanho do carrosel*/
-     .carrossel-personalizado {
-   max-height: 300px; /* ajuste o valor como quiser */
-   overflow: hidden;
- }
- 
- .carrossel-personalizado .carousel-item img {
-   object-fit: cover;
-   height: 300px;
-   width: 100%;
- }
+    /* para definir o tamanho do carrosel*/
+   .carrossel-personalizado {
+  width: 100%;
+  max-height: 400px; /* opcional, limite máximo */
+  overflow: hidden;
+}
+
+.carrossel-personalizado .carousel-item img {
+  width: 100%;
+  height: auto; /* ajusta automaticamente a altura */
+  object-fit: cover; /* mantém o corte proporcional */
+  max-height: 400px; /* opcional */
+}
    /* cards*/
    .card h6 {
    font-size: 0.9rem;
@@ -170,7 +173,7 @@
 <body>
     <!-- Botão de Voltar -->
    <div class="text-start">
-    <a href="index.html" class="btn-voltar">Voltar</a>
+    <a href="conteudocompleto.html" class="btn-voltar">Voltar</a>
 </div>
 
 <!-- Cabeçalho ///  navbar -->
@@ -186,26 +189,38 @@
 </div>
 </header>
 
-<!--Banner-->
-<!-- Carrossel -->
-<div id="doceriaCarousel" class="carousel slide carrossel-personalizado " data-bs-ride="carousel">
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <img src="img/carrossellll.JPG" class="d-block w-100" alt="Imagem 2"> 
-  </div>
-  <div class="carousel-item">
-    <img src="img/unicamp.jpg" class="d-block w-100" alt="Imagem 2">
-  </div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Anterior</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Próximo</span>
-</button>
-</div>
+<!-- Banner/Carrossel -->
+  <div id="bannerpiclass" class="carousel slide carrossel-personalizado" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/apiclass.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/piclasssssssss.png" class="d-block w-100">
+      </div>
+            <div class="carousel-item">
+        <img src="img/Transforme.png" class="d-block w-100">
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Matemática sem dor de cabeça..png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/teste54.png" class=" d-block w-100">
+      </div>
+    </div>
+
+   <!--Buttons-->
+   <button class="carousel-control-prev" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Anterior</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#doceriaCarousel" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Próximo</span>
+   </button>
+ </div>
+ 
 
 <!--CONTEUDO ReP-->
 
@@ -253,14 +268,14 @@
 <p class = "text-center">a10=a1+(n−1).r </p>
 <p class = "text-center">-> a10 = 8 (10-1). 3 = 8 + 9.3 = 35</p>
 
-<img src="img23.PNG" class="d-block w-100" alt="Imagem 24">
+<img src="img/img23.PNG" class="d-block w-100" alt="Imagem 24">
 
 <br>
 <p>
  Por exemplo, com base no Teoremas de Pitágoras, para determinar a medida “a” do triângulo retângulo abaixo deve-se fazer o cálculo posterior: 
 </p>
 
-<img src="img24.PNG" class="d-block w-100" alt="Imagem 25">
+<img src="img/img24.PNG" class="d-block w-100" alt="Imagem 25">
 <br>
 <p class = "text-center">a² = b² + c²</p>
 <p class = "text-center">a² = 12² + 5² </p>
@@ -278,7 +293,7 @@
  O círculo trigonométrico também possui duas retas perpendiculares entre si, ambas com o valor 0 (zero) no ponto de interseção. Existem dois sentidos de marcação dos arcos no círculo: sentido negativo (horário) e o sentido positivo (anti-horário), por onde ele geralmente tem início. 
 </p>
 
-<img src="img25.PNG" class="d-block w-100" alt="Imagem 26">
+<img src="img/img25.PNG" class="d-block w-100" alt="Imagem 26">
 
 <p>As medidas dos ângulos no círculo podem ser identificadas em graus ou em radianos, pois são diretamente proporcionais. Entenda:</p>
 
@@ -307,7 +322,7 @@
  </li>
 </ul>
 
-<img src="img26.PNG" class="d-block w-100" alt="Imagem 27">
+<img src="img/img26.PNG" class="d-block w-100" alt="Imagem 27">
 
 <h4 class="mt-4">Razões e funções trigonométricas: seno, cosseno e tangente 
 </h4>
@@ -321,14 +336,14 @@
  <li>Tangente (Tg) - representada pela razão entre o cateto oposto e o cateto adjacente de um triângulo retângulo, descrito pela fórmula: </li>
 </ul>
 
-<img src="img27.PNG" class="d-block w-100" alt="Imagem 28">
+<img src="img/img27.PNG" class="d-block w-100" alt="Imagem 28">
 
 <h4 class="mt-4">Ângulos notáveis  
 </h4>
 
 <p>Em trigonometria são chamados de ângulos notáveis aqueles que aparecem com maior frequência nos cálculos, ganhando menção honrosa em relação a tantos outros. Deste modo, conhecer os valores em seno, cosseno e tangente é muito vantajoso.</p>
 
-<img src="img28.PNG" class="d-block w-100" alt="Imagem 29">
+<img src="img/img28.PNG" class="d-block w-100" alt="Imagem 29">
 
 <h4 class="mt-4">Funções trigonométricas</h4>
 
@@ -342,14 +357,14 @@
  O valor de x é o ângulo, podendo ser trabalhado em radianos ou em graus. O gráfico da função seno é conhecido como senoide.
  </p>
 
- <img src="img29.PNG" class="d-block w-100" alt="Imagem 30">
+ <img src="img/img29.PNG" class="d-block w-100" alt="Imagem 30">
 <p>O gráfico da função seno é conhecido como senoide.</p>
 <br>
 <i>Função cosseno</i>
 <p>A função cosseno está definida nos mesmos parâmetros que a função seno, é uma função de R em R, cuja lei de formação é f (x) = cos (x). A diferença está somente nas imagens para os valores de x, e, ainda, a função cosseno tem um comportamento cíclico muito parecido com a função seno, com imagem limitada ao intervalo [-1, 1]. Seu gráfico é conhecido como cossenoide.
 </p>
 
-<img src="img30.PNG" class="d-block w-100" alt="Imagem 31">
+<img src="img/img30.PNG" class="d-block w-100" alt="Imagem 31">
 
 <h4 class="mt-4">Identidades trigonométricas
 </h4>
@@ -363,7 +378,7 @@
 <p>São conhecidas, respectivamente, como cossecante, secante e cotangente e são identidades importantes da trigonometria.
 </p>
 
-<img src="img31.PNG" class="d-block w-100" alt="Imagem 32">
+<img src="img/img31.PNG" class="d-block w-100" alt="Imagem 32">
 
 <h4 class="mt-4">Identidades associadas à simetria
 </h4>
@@ -409,7 +424,7 @@
 
 </p>
 
-<img src="img32.PNG" class="d-block w-100" alt="Imagem 33">
+<img src="img/img32.PNG" class="d-block w-100" alt="Imagem 33">
 <p>Em relação à partilha proposta, constata-se que a porcentagem da área do terreno que coube a João corresponde, aproximadamente, a:
  </p>
  <i>(Considere √3/3 = 0,58)</i>
@@ -425,7 +440,7 @@
 <p class="text-align">2. (ENEM) 
 </p>
 <br>
-<img src="img33.PNG" class="d-block w-100" alt="Imagem 34">
+<img src="img/img33.PNG" class="d-block w-100" alt="Imagem 34">
 <br>
 <p>Na figura acima, que representa o projeto de uma escada com 5 degraus de mesma altura, o comprimento total do corrimão é igual a:</p>
 <ul>
@@ -440,10 +455,10 @@
 <h2 class="mt-5 text-center">GABARITO:</h2>
 <i>1. Resposta: E</i>
 <p>Para encontrar a área do terreno do João, sabemos que o ângulo reto foi dividido em 3 partes iguais, logo, o ângulo representado pela região de extração de ouro é de 30º. Conhecemos a altura de 2 km do terreno, então, vamos calcular o cateto oposto ao ângulo utilizando a tangente</p>
-<img src="img34.PNG" class="d-block w-100" alt="Imagem 35">
+<img src="img/img34.PNG" class="d-block w-100" alt="Imagem 35">
 <p>A área do João, Aj, é dada pelo produto entre a base e a altura dividido por dois, e a área do retângulo At é dada pelo produto entre a base e a altura. Para calcular a porcentagem, basta calcular a razão entre Aj e At.</p>
 <p class = "text-center">At = 2 · 3 = 6 </p>
-<img src="img35.PNG" class="d-block w-100" alt="Imagem 36">
+<img src="img/img35.PNG" class="d-block w-100" alt="Imagem 36">
 <br>
 
 <i>2. Resposta: B</i>
@@ -462,47 +477,51 @@
 
     
 
-<!-- Rodapé -->
-<footer class="bg-light text-center text-lg-start mt-5">
-    <div class="container p-4">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
-                <p> Melhor plataforma de estudos! </p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links Úteis</h5>
-                <ul class="list-unstyled mb-0">
-                    <li><a href="#" class="text-dark">Sobre Nós</a></li>
-                    <li><a href="#" class="text-dark">Contato</a></li>
-                    <li><a href="#" class="text-dark">Termos de Serviço</a></li>
-                    <li><a href="#" class="text-dark">Política de Privacidade</a></li>
-            </div>
-            <div class="col"></div>
-            <div class="col-md-auto">
-                <h5 class="text-uppercase">Redes Sociais</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-dark">Facebook</a></li>
-                    <li><a href="#" class="text-dark">Instagram</a></li>
-                    <li><a href="#" class="text-dark">Twitter</a></li>
-                    <li><a href="#" class="text-dark">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>  
-    </div>
-    <div class="text-center p-3 bg-dark text-white">
-        © 2025 Piclass. Todos os direitos reservados.
-    </div>
-</footer>
-<script src="script.js"></script>
+  <!-- Rodapé -->
+   <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold fst-italic">PICLASS</h5>
+                    <p> Melhor isolado de matemática! </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">links úteis</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="sobrenos.html" class="text-dark">Sobre Nós</a></li>
+                        <li><a href="#" class="text-dark">Termos de Serviço</a></li>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-auto">
+                    <h5 class="text-uppercase">Converse conosco:</h5>
+                    <ul class="list-unstyled">
+                      <li> contato.piclass@gmail.com</li>
+            
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2025 Piclass. Todos os direitos reservados.
+        </div>
+    </footer>
+<script src="script.js"> 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-// Seleciona todos os blocos com atributo data-link
-document.querySelectorAll('[data-link]').forEach(bloco => {
-bloco.addEventListener('click', () => {
-  const destino = bloco.getAttribute('data-link');
-  window.location.href = destino;
-});
-});
+
+  // Inicialização manual opcional (troca a cada 5s)
+    const el = document.querySelector('#bannerpiclass');
+    const carousel = new bootstrap.Carousel(el, { interval: 5000 });
+ 
+  // Seleciona todos os blocos com atributo data-link
+  document.querySelectorAll('[data-link]').forEach(bloco => {
+    bloco.addEventListener('click', () => {
+      const destino = bloco.getAttribute('data-link');
+      window.location.href = destino;
+    });
+  });
 </script>
 </body>
 </html>
